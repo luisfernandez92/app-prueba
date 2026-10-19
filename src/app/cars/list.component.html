@@ -1,0 +1,24 @@
+<section class="list" aria-labelledby="list-title">
+  <h1 id="list-title">Listado de autos</h1>
+
+  <div aria-live="polite" [attr.aria-busy]="estado() === 'cargando'">
+    @switch (estado()) {
+      @case ('cargando') {
+        <p class="estado">Cargando información…</p>
+      }
+      @case ('error') {
+        <p class="estado estado--error" role="alert">{{ error() }}</p>
+      }
+      @case ('vacio') {
+        <p class="estado">El servicio no devolvió información.</p>
+      }
+      @default {
+        <p class="respuesta">{{ contenido() }}</p>
+      }
+    }
+  </div>
+
+  <button type="button" class="recargar" (click)="cargar()" [disabled]="estado() === 'cargando'">
+    Recargar
+  </button>
+</section>

@@ -1,0 +1,27 @@
+/* Tokens NOVACTI — División Software (acento ámbar) sobre tema oscuro. */
+:root {
+  --nv-sw-accent: #f6bc01;
+  --nv-bg: #0a0a0c;
+  --nv-surface: #141418;
+  --nv-border: #2a2a31;
+  --nv-text: #e6e6ea;
+  --nv-text-strong: #ffffff;
+  --nv-text-muted: #a0a0ab;
+  --nv-danger: #ff6b6b;
+
+  --nv-space-md: 1rem;
+  --nv-space-lg: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--nv-bg);
+  color: var(--nv-text);
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+}

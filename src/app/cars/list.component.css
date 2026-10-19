@@ -1,0 +1,54 @@
+.list {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: var(--nv-space-lg);
+}
+
+h1 {
+  margin: 0 0 var(--nv-space-md);
+  font-size: 1.5rem;
+  color: var(--nv-text-strong);
+}
+
+.estado {
+  margin: 0 0 var(--nv-space-md);
+  color: var(--nv-text-muted);
+}
+
+.estado--error {
+  color: var(--nv-danger);
+}
+
+.respuesta {
+  margin: 0 0 var(--nv-space-md);
+  padding: var(--nv-space-md);
+  border: 1px solid var(--nv-border);
+  border-radius: 8px;
+  background: var(--nv-surface);
+  color: var(--nv-text);
+  font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.recargar {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--nv-sw-accent);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--nv-sw-accent);
+  font: inherit;
+  cursor: pointer;
+}
+
+.recargar:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.recargar:focus-visible {
+  outline: 2px solid var(--nv-sw-accent);
+  outline-offset: 2px;
+}
